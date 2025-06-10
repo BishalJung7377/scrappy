@@ -5,8 +5,12 @@
 
 import scrapy
 
-
+### """""""""""" items are temporary data where we are storing out scrapped data """"""""""""
 class ScrappyItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    ##this is to define our item container
+    
+    ## we have created temporary container to store the info from our spider
+    quote_title = scrapy.Field()
+    author_name = scrapy.Field()
+    quote_tag = scrapy.Field()
+    
